@@ -1,0 +1,83 @@
+body {
+  background-color: rgb(252, 88, 88);
+  margin:2% 10%;
+}
+video,
+canvas {
+  margin-top: 10px;
+  border: 1px solid black;
+  padding: 3px;
+  height: 360px;
+  width: 400px;
+  background-color:white;
+}
+
+input[type="button"] {
+  position: relative;
+  top: -10px;  
+  border-radius: 4px;
+  border: 1px solid #5678ef;
+  background-color: #5678ef;
+  color: white;
+  padding: 7px;
+  margin: 20px;
+}
+
+input[type="button"]:hover {
+  background-color: #77cff1;
+  color: #000;
+}
+
+.file-select {
+  position: relative;
+  display: inline-block;
+}
+
+.file-select::before {
+  background-color: #5678ef;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  content: "Seleccionar"; /* testo por defecto */
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.file-select input[type="file"] {
+  opacity: 0;
+  width: 200px;
+  height: 32px;
+  display: inline-block;
+}
+
+#src-file1::before {
+  content: "Seleccionar Archivo";
+}
+input[type="text"]{
+    position: relative;
+    top: -5px;  
+    margin-left: 15px;
+}
+
+#galeria{
+    height:200px;
+/* ç    display:inline-block; */
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+img{
+    padding: 2px;
+    border: 1px solid black;
+}
+
+img:hover{ 
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    border:0;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capturador de imagenes</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="faveicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="file-select" id="src-file1" >
+        <input type="file" name="src-file1" aria-label="Archivo" id="files">
+      </div>
+    <br>
+    <video id="Video1" autoplay="true" muted controls></video>
+    <input type="text" id=tema placeholder="Tema">
+    <input type="button" onclick="capturarFoto()" value="📽️  Captura Foto" />
+    <canvas id="foto" src="375x375.png"></canvas>
+    
+    <br>
+    <input type="button" value="🎞️  Mostrar galeria del video" onclick="mostrarGaleria()">
+    <div id="galeria"></div>
+</body>
+<script src="js/funciones.js"></script>
+</html>
